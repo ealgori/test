@@ -2,5 +2,10 @@
 2 - gfhgfh
 3 - fghfghj
 4
+<<<<<<< .mine
 5
 sdfsdfsdfsd6ahahahahaha
+=======
+5ьна рш ядну!
+6ahahahahaha!!!!!!!
+>>>>>>> .theirs
