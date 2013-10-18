@@ -17,4 +17,4 @@ jQuery(document).ready(function ($) {
       $('#iframe').contents().find('input').addClass('form-control');    
   
 
-  }
+  })
