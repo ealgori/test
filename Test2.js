@@ -1,7 +1,13 @@
-(function(){
-  var newscript = document.createElement('script');
-     newscript.type = 'text/javascript';
-     newscript.async = true;
-     newscript.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js';
-  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(newscript);
-})();
+var $ = document; // shortcut
+var cssId = 'myCss';  // you could encode the css path itself to generate id..
+if (!$.getElementById(cssId))
+{
+    var head  = $.getElementsByTagName('head')[0];
+    var link  = $.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'http://getbootstrap.com/dist/css/bootstrap.css';
+    link.media = 'all';
+    head.appendChild(link);
+}
