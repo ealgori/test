@@ -13,4 +13,4 @@ if (!$.getElementById(cssId))
 }
 
 
-$('input').addClass('form-control');
+$('#iframe').contents().find('input').addClass('form-control');
