@@ -1,9 +1,21 @@
+  window.onload = init();
+  
+ 
+ finction init(){
+ initJQ();
+ initBootsrap();
+ AddFormControl();
+ }
+ 
+  function initJQ(){
   var newscript = document.createElement('script');
      newscript.type = 'text/javascript';
      newscript.async = true;
      newscript.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js';
   document.getElementsByTagName('head')[0].appendChild(newscript);
-
+  }
+  
+  function initBootstrap(){
   var el = document; // shortcut
   var cssId = 'myCss';  // you could encode the css path itself to generate id..
   if (!el.getElementById(cssId))
@@ -17,9 +29,10 @@
       link.media = 'all';
       head.appendChild(link);
   }
+  }
   
-  
+  function AddFormControl(){
       $('#iframe').contents().find('input').addClass('form-control');    
   
-
+}
 
