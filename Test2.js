@@ -1,4 +1,4 @@
-$(document).ready(function ($) {
+$(document).ready(function () {
   var el = document; // shortcut
   var cssId = 'myCss';  // you could encode the css path itself to generate id..
   if (!el.getElementById(cssId))
