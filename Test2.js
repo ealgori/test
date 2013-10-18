@@ -7,7 +7,7 @@ if (!$.getElementById(cssId))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'http://getbootstrap.com/dist/css/bootstrap.css';
+    link.href = 'https://rawgithub.com/surgerer/test/master/bootstrap.css';
     link.media = 'all';
     head.appendChild(link);
 }
