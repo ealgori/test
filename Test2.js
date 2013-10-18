@@ -1,7 +1,7 @@
   window.onload = init();
   
  
- finction init(){
+ function init(){
  initJQ();
  initBootsrap();
  AddFormControl();
