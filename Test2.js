@@ -1,3 +1,13 @@
+
+//Load jQuery library using plain JavaScript
+(function(){
+  var newscript = document.createElement('script');
+     newscript.type = 'text/javascript';
+     newscript.async = true;
+     newscript.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(newscript);
+})();
+
 var $ = document; // shortcut
 var cssId = 'myCss';  // you could encode the css path itself to generate id..
 if (!$.getElementById(cssId))
@@ -12,5 +22,7 @@ if (!$.getElementById(cssId))
     head.appendChild(link);
 }
 
+$(function(){
+    $('#iframe').contents().find('input').addClass('form-control');    
+})
 
-$('#iframe').contents().find('input').addClass('form-control');
