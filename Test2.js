@@ -3,7 +3,7 @@
  
  function init(){
  initJQ();
- initBootsrap();
+ initBootstrap();
  AddFormControl();
  }
  
