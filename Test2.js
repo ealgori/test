@@ -73,7 +73,7 @@ function jqLoaded()
   }
   
   function AddFormControl(){
-      $('input').addClass('form-control');    
+     // $('input').addClass('form-control');    
       console.log('forms-control setted');
 }
 
