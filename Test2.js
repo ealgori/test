@@ -8,7 +8,12 @@ iframe.addEventListener('load', function(){ alert('IframeLoaded'); });
  //initBootstrap();
  //AddFormControl();
  }
- 
+var checkExist = setInterval(function() {
+   if ( document.getElementById('iframe')) {
+      console.log("Exists!");
+      clearInterval(checkExist);
+   }
+}, 100); // check every 100ms 
  // function initJQ(){
  // var newscript = document.createElement('script');
 //     newscript.type = 'text/javascript';
