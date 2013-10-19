@@ -2,8 +2,9 @@
   
  
  function init(){
-var iframe = document.getElementById('iframe')
-iframe.addEventListener('load', function(){ alert('IframeLoaded'); });
+checkExist();
+//var iframe = document.getElementById('iframe')
+//iframe.addEventListener('load', function(){ alert('IframeLoaded'); });
 // initJQ();
  //initBootstrap();
  //AddFormControl();
