@@ -17,12 +17,32 @@ function waitJqLoaded() {
     }
 }
 
+
+function waitIframeExist() {
+    if ($("iframe").length > 0){
+        //possibly some other JQuery checks to make sure that everything is loaded here
+
+        iFrameExist();
+    } else {
+        setTimeout(waitIframeLoaded, 50);
+    }
+}
+
 function jqLoaded()
 {
   console.log('jquery loaded');
+  waitIframeExist();
+ 
+}
+
+function iFrameExist(){
+  console.log('iframe exist');
+  
+  $('iframe').load(function() { 
+    console.log('iframe load complete');
+  }
   initBootstrap();
   AddFormControl();
- 
 }
   // function initJQ(){
   // var newscript = document.createElement('script');
