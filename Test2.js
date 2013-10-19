@@ -70,6 +70,6 @@ function iFrameExist(){
   
   function AddFormControl(){
       $('#iframe').contents().find('input').addClass('form-control');    
-  
+   console.log('forms-control setted');
 }
 
