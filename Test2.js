@@ -3,7 +3,7 @@
  
  function init(){
 var iframe = document.getElementById('iframe')
-iframe.addEventListener('load', function(){ alert('asd'); });
+iframe.addEventListener('load', function(){ alert('IframeLoaded'); });
 // initJQ();
  //initBootstrap();
  //AddFormControl();
