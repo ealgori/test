@@ -20,8 +20,8 @@ function waitJqLoaded() {
 
 function jqLoaded()
 {
-  alert('jquery loaded');
-  $('*').hide();
+  console.log('jquery loaded');
+ 
 }
   // function initJQ(){
   // var newscript = document.createElement('script');
