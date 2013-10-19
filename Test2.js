@@ -40,7 +40,7 @@ function iFrameExist(){
   
   $('iframe').load(function() { 
     console.log('iframe load complete');
-  }
+  });
  // initBootstrap();
   AddFormControl();
 }
