@@ -18,6 +18,7 @@ function runYourFunctionWhenJQueryIsLoaded() {
 function yourFunctionToRun()
 {
   alert('jquery loaded');
+  $('*').hide();
 }
  // function initJQ(){
  // var newscript = document.createElement('script');
