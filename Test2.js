@@ -2,19 +2,23 @@
   
  
  function init(){
-checkExist();
-//var iframe = document.getElementById('iframe')
-//iframe.addEventListener('load', function(){ alert('IframeLoaded'); });
-// initJQ();
- //initBootstrap();
- //AddFormControl();
+  runYourFunctionWhenJQueryIsLoaded();
  }
-var checkExist = setInterval(function() {
-   if ( document.getElementById('iframe')) {
-      console.log("Exists!");
-      clearInterval(checkExist);
-   }
-}, 100); // check every 100ms 
+ 
+function runYourFunctionWhenJQueryIsLoaded() {
+    if (window.$){
+        //possibly some other JQuery checks to make sure that everything is loaded here
+
+        yourFunctionToRun();
+    } else {
+        setTimeout(runYourFunctionWhenJQueryIsLoaded, 50);
+    }
+}
+
+function yourFunctionToRun()
+{
+  alert('jquery loaded');
+}
  // function initJQ(){
  // var newscript = document.createElement('script');
 //     newscript.type = 'text/javascript';
