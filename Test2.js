@@ -33,7 +33,7 @@ function jqLoaded()
 {
   console.log('jquery loaded');
   initBootstrap();
-  unloadCss('webforms.css');
+  unloadCss('webforms');
   AddFormControl();
  
 }
