@@ -42,6 +42,8 @@ function jqLoaded()
 function unloadCss(url)
 {
   $("link[href='"+url+"']").remove();
+  
+  console.log(url +'unloaded');
 }
 // function iFrameExist(){
 //   console.log('iframe exist');
