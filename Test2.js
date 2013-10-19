@@ -33,10 +33,16 @@ function jqLoaded()
 {
   console.log('jquery loaded');
   initBootstrap();
+  unloadCss('https://sitehandler-emea2.ericsson.net/resources/HTML_3.0.2.R06/css/webforms.css');
   AddFormControl();
  
 }
 
+
+function unloadCss(url)
+{
+  $("link[href='"+url+"']").remove();
+}
 // function iFrameExist(){
 //   console.log('iframe exist');
   
