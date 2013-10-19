@@ -3,48 +3,57 @@
  
  function init(){
  
-  waitJqLoaded();
- 
+ // waitJqLoaded();
+ waitIframeExist();
  }
  
-function waitJqLoaded() {
-    if (window.$){
-        //possibly some other JQuery checks to make sure that everything is loaded here
+// function waitJqLoaded() {
+//     if (window.$){
+//         //possibly some other JQuery checks to make sure that everything is loaded here
 
-        jqLoaded();
-    } else {
-        setTimeout(waitJqLoaded, 50);
-    }
-}
+//         jqLoaded();
+//     } else {
+//         setTimeout(waitJqLoaded, 50);
+//     }
+// }
 
 
+// function waitIframeExist() {
+//     if ($("iframe").length > 0){
+//         //possibly some other JQuery checks to make sure that everything is loaded here
+
+//         iFrameExist();
+//     } else {
+//       console.log('iframe not exist');
+//         setTimeout(waitIframeExist, 50);
+//     }
+// }
 function waitIframeExist() {
-    if ($("iframe").length > 0){
+    if (document.getElementById('iframe')==null){
         //possibly some other JQuery checks to make sure that everything is loaded here
 
-        iFrameExist();
+       console.log('iframe exist');
     } else {
        console.log('iframe not exist');
         setTimeout(waitIframeExist, 50);
     }
 }
-
-function jqLoaded()
-{
-  console.log('jquery loaded');
-  waitIframeExist();
+// function jqLoaded()
+// {
+//   console.log('jquery loaded');
+//   waitIframeExist();
  
-}
+// }
 
-function iFrameExist(){
-  console.log('iframe exist');
+// function iFrameExist(){
+//   console.log('iframe exist');
   
-  $('iframe').load(function() { 
-    console.log('iframe load complete');
-  });
- // initBootstrap();
-  AddFormControl();
-}
+//   $('iframe').load(function() { 
+//     console.log('iframe load complete');
+//   });
+// // initBootstrap();
+//   AddFormControl();
+// }
   // function initJQ(){
   // var newscript = document.createElement('script');
   //   newscript.type = 'text/javascript';
