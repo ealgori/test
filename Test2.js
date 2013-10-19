@@ -41,7 +41,7 @@ function iFrameExist(){
   $('iframe').load(function() { 
     console.log('iframe load complete');
   }
-  initBootstrap();
+ // initBootstrap();
   AddFormControl();
 }
   // function initJQ(){
