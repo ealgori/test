@@ -33,15 +33,15 @@ function jqLoaded()
 {
   console.log('jquery loaded');
   initBootstrap();
-  unloadCss('https://sitehandler-emea2.ericsson.net/resources/HTML_3.0.2.R06/css/webforms.css');
+  unloadCss('webforms.css');
   AddFormControl();
  
 }
 
 
-function unloadCss(url)
+function unloadCss(cssName)
 {
-  $("link[href='"+url+"']").remove();
+  $("link[href*="+cssName+""]").attr("disabled", "disabled");
   
   console.log(url +'unloaded');
 }
