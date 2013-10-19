@@ -33,18 +33,18 @@ function jqLoaded()
 {
   console.log('jquery loaded');
   initBootstrap();
-  unloadCss('webforms');
+ // unloadCss('webforms');
   AddFormControl();
  
 }
 
 
-function unloadCss(cssName)
-{
-  $("link[href*="+cssName+""]").attr("disabled", "disabled");
+// function unloadCss(cssName)
+// {
+//   $("link[href*="+cssName+""]").attr("disabled", "disabled");
   
-  console.log(url +'unloaded');
-}
+//   console.log(url +'unloaded');
+// }
 // function iFrameExist(){
 //   console.log('iframe exist');
   
