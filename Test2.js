@@ -3,19 +3,19 @@
  
  function init(){
  
- // waitJqLoaded();
- waitIframeExist();
+  waitJqLoaded();
+ 
  }
  
-// function waitJqLoaded() {
-//     if (window.$){
-//         //possibly some other JQuery checks to make sure that everything is loaded here
+function waitJqLoaded() {
+    if (window.$){
+        //possibly some other JQuery checks to make sure that everything is loaded here
 
-//         jqLoaded();
-//     } else {
-//         setTimeout(waitJqLoaded, 50);
-//     }
-// }
+        jqLoaded();
+    } else {
+        setTimeout(waitJqLoaded, 50);
+    }
+}
 
 
 // function waitIframeExist() {
@@ -28,22 +28,13 @@
 //         setTimeout(waitIframeExist, 50);
 //     }
 // }
-function waitIframeExist() {
-    if (document.getElementById('iframe')!=null){
-        //possibly some other JQuery checks to make sure that everything is loaded here
 
-       console.log('iframe exist');
-    } else {
-       console.log('iframe not exist');
-        setTimeout(waitIframeExist, 50);
-    }
-}
-// function jqLoaded()
-// {
-//   console.log('jquery loaded');
-//   waitIframeExist();
+function jqLoaded()
+{
+  console.log('jquery loaded');
+  AddFormControl();
  
-// }
+}
 
 // function iFrameExist(){
 //   console.log('iframe exist');
@@ -79,7 +70,7 @@ function waitIframeExist() {
   // }
   
   function AddFormControl(){
-      $('#iframe').contents().find('input').addClass('form-control');    
+      $('input').addClass('form-control');    
    console.log('forms-control setted');
 }
 
