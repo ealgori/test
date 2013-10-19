@@ -2,18 +2,20 @@
   
  
  function init(){
- initJQ();
- initBootstrap();
- AddFormControl();
+var iframe = document.getElementById('iframe')
+iframe.addEventListener('load', function(){ alert('asd'); });
+// initJQ();
+ //initBootstrap();
+ //AddFormControl();
  }
  
-  function initJQ(){
-  var newscript = document.createElement('script');
-     newscript.type = 'text/javascript';
-     newscript.async = false;
-     newscript.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js';
-  document.getElementsByTagName('head')[0].appendChild(newscript);
-  }
+ // function initJQ(){
+ // var newscript = document.createElement('script');
+//     newscript.type = 'text/javascript';
+//     newscript.async = false;
+//     newscript.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js';
+//  document.getElementsByTagName('head')[0].appendChild(newscript);
+//  }
   
   function initBootstrap(){
   var el = document; // shortcut
