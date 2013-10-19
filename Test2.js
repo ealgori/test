@@ -24,7 +24,7 @@ function waitIframeExist() {
 
         iFrameExist();
     } else {
-        setTimeout(waitIframeLoaded, 50);
+        setTimeout(waitIframeExist, 50);
     }
 }
 
