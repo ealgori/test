@@ -4,8 +4,7 @@
  function init(){
  
   waitJqLoaded();
-  initBootstrap();
-  AddFormControl();
+ 
  }
  
 function waitJqLoaded() {
@@ -21,6 +20,8 @@ function waitJqLoaded() {
 function jqLoaded()
 {
   console.log('jquery loaded');
+  initBootstrap();
+  AddFormControl();
  
 }
   // function initJQ(){
