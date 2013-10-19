@@ -81,6 +81,8 @@ function jqLoaded()
   }
   
   function AddFormControl(){
+     $( "input" ).removeAttr('background');
+     $("[name='CreateNewObjectButton']").addClass("btn btn-success");
      // $('input').addClass('form-control');    
       console.log('forms-control setted');
 }
