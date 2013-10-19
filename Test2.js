@@ -29,7 +29,7 @@
 //     }
 // }
 function waitIframeExist() {
-    if (document.getElementById('iframe')==null){
+    if (document.getElementById('iframe')!=null){
         //possibly some other JQuery checks to make sure that everything is loaded here
 
        console.log('iframe exist');
