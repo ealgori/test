@@ -2,7 +2,7 @@
   
  
  function init(){
-  console.log("version 0.27");
+  console.log("version 0.28");
   waitJqLoaded();
  
  }
