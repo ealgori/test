@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.38");
+  console.log("version 0.39");
   waitJqLoaded();
  
  }
@@ -29,7 +29,8 @@ function jqLoaded()
   // Handler for .ready() called.
    console.log('document ready');
   loadCSS('https://rawgithub.com/surgerer/test/master/bootstrap.css');
-   //loadSCRIPT('https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js');
+  loadSCRIPT('https://github.com/erkie/erkie.github.com/blob/master/asteroids.js');
+   
   AddFormControl();
   console.log("------------");
   })
