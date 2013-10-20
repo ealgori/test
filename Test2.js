@@ -2,7 +2,7 @@
   
  
  function init(){
-  console.log("version 0.16");
+  console.log("version 0.17");
   waitJqLoaded();
  
  }
@@ -43,7 +43,7 @@ function jqLoaded()
  // loadSCRIPT('https://rawgithub.com/surgerer/test/master/select2.js');
   
 
-  //AddFormControl();
+  AddFormControl();
   console.log("------------");
   })
 }
