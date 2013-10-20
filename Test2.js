@@ -43,7 +43,7 @@ function jqLoaded()
 
 function unloadCss(cssName)
 {
-  $("link[href*="+cssName+""]").attr("disabled", "disabled");
+  $("link[href*="+cssName+"]").attr("disabled", "disabled");
  //$("link[href*=webforms]").remove(); 
   console.log(url +'unloaded');
 }
