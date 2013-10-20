@@ -1,7 +1,8 @@
-  //window.onload = init();
+  window.onload = init();
   
  
  function init(){
+  checkUrl();
   console.log("version 0.32");
   waitJqLoaded();
  
