@@ -18,16 +18,8 @@ function waitJqLoaded() {
 }
 
 
-// function waitIframeExist() {
-//     if ($("iframe").length > 0){
-//         //possibly some other JQuery checks to make sure that everything is loaded here
 
-//         iFrameExist();
-//     } else {
-//       console.log('iframe not exist');
-//         setTimeout(waitIframeExist, 50);
-//     }
-// }
+
 
 function jqLoaded()
 {
@@ -101,7 +93,7 @@ function unloadCSS(cssName)
     //   });
       $("#formDiv").find("select").addClass('form-control');
       $("#formDiv").find("[type='text']").addClass('form-control');
-     $("table").addClass('table table-striped');
+      $("#formDiv").find("table").addClass('table table-striped');
      
      
      // $('input').addClass('form-control');    
