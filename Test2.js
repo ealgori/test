@@ -2,7 +2,7 @@
   
  
  function init(){
-  console.log("version 0.23");
+  console.log("version 0.24");
   waitJqLoaded();
  
  }
@@ -101,7 +101,7 @@ function unloadCSS(cssName)
     //   });
       $("#formDiv").find("select").addClass('form-control');
       $("#formDiv").find("[type='text']").addClass('form-control');
-     
+     $("table").addClass('table table-striped');
      
      
      // $('input').addClass('form-control');    
