@@ -33,6 +33,9 @@ function jqLoaded()
 {
   console.log('jquery loaded');
   loadCSS('https://rawgithub.com/surgerer/test/master/bootstrap.css');
+  loadCSS('https://rawgithub.com/surgerer/test/master/select2.css');
+  loadSCRIPT('https://rawgithub.com/surgerer/test/master/select2.js');
+  
  // loadSCRIPT('https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js');
   //initBootstrap();
  // unloadCss('webforms');
@@ -102,6 +105,7 @@ function unloadCSS(cssName)
      $("[type='button']").addClass("btn");
      $("[name='CreateNewObjectButton']").addClass("btn-success");
      $("[name='DeleteObjectButton']").addClass("btn-danger");
+     $("select").select2();
      // $('input').addClass('form-control');    
       console.log('forms-control setted');
 }
