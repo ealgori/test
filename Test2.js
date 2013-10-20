@@ -2,7 +2,7 @@
   
  
  function init(){
-  console.log("version 0.30");
+  console.log("version 0.31");
   waitJqLoaded();
  
  }
@@ -82,7 +82,7 @@ function unloadCSS(cssName)
   function AddFormControl(){
   
      
-     unloadCSS('webforms');
+    // unloadCSS('webforms');
     // $("[type='button']").addClass("btn");
     // $("[name='CreateNewObjectButton']").addClass("btn-success");
     // $("[name='DeleteObjectButton']").addClass("btn-danger");
