@@ -33,7 +33,7 @@ function jqLoaded()
 {
   console.log('jquery loaded');
   loadCSS('https://rawgithub.com/surgerer/test/master/bootstrap.css');
-  loadSCRIPT('https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js');
+ // loadSCRIPT('https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js');
   //initBootstrap();
  // unloadCss('webforms');
   AddFormControl();
