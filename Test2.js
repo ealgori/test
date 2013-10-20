@@ -100,7 +100,8 @@ function unloadCSS(cssName)
         $( this ).addClass("form-control");
       });
       $("[type='text']").each(function( index ) {
-        $( this ).addClass("form-control");
+        if(this.name!='objects'||this.name!='pattern')
+          $( this ).addClass("form-control");
       });
      
      
