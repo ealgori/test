@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.37");
+  console.log("version 0.38");
   waitJqLoaded();
  
  }
@@ -88,6 +88,7 @@ function unloadCSS(cssName)
       $("#formDiv").find("select").addClass('form-control');
       $("#formDiv").find("[type='text']").addClass('form-control');
       $("#formDiv > table>tbody>tr>td>div>table>tbody>tr>td>table:eq(0)").addClass('table table-striped table-hover');
+      $("#formDiv > table>tbody>tr>td>div>table>tbody>tr>td>table>td").addClass('form-inline');
       $("#dataTable>tbody>tr>td>table").css('width','57%');
      
         
