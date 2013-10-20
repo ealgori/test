@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.33");
+  console.log("version 0.34");
   waitJqLoaded();
  
  }
@@ -28,7 +28,7 @@ function jqLoaded()
   $( document ).ready(function() {
   // Handler for .ready() called.
    console.log('document ready');
-   checkUrl();
+   
   //loadCSS('https://rawgithub.com/surgerer/test/master/select2.css');
   //loadCSS('https://rawgithub.com/surgerer/test/master/bootstrap.css');
    //loadSCRIPT('https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js');
