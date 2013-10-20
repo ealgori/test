@@ -41,7 +41,7 @@ function jqLoaded()
 }
 
 
-function unloadCss(cssName)
+function unloadCSS(cssName)
 {
   $("link[href*="+cssName+"]").attr("disabled", "disabled");
  //$("link[href*=webforms]").remove(); 
@@ -96,6 +96,7 @@ function unloadCss(cssName)
   function AddFormControl(){
      //$( "input" ).removeAttr('background');
      //$("link[href*=webforms]").remove();
+     
      unloadCSS('webforms');
      $("[type='button']").addClass("btn");
      $("[name='CreateNewObjectButton']").addClass("btn-success");
