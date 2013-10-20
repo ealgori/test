@@ -2,7 +2,7 @@
   
  
  function init(){
-  console.log("version 0.12");
+  console.log("version 0.13");
   waitJqLoaded();
  
  }
@@ -38,9 +38,7 @@ function jqLoaded()
   
  // loadSCRIPT('https://rawgithub.com/surgerer/test/master/select2.js');
   
- //
-  //initBootstrap();
- // unloadCss('webforms');
+
   AddFormControl();
  
 }
@@ -52,22 +50,7 @@ function unloadCSS(cssName)
  //$("link[href*=webforms]").remove(); 
   console.log(cssName +'unloaded');
 }
-// function iFrameExist(){
-//   console.log('iframe exist');
-  
-//   $('iframe').load(function() { 
-//     console.log('iframe load complete');
-//   });
-// // initBootstrap();
-//   AddFormControl();
-// }
-  // function initJQ(){
-  // var newscript = document.createElement('script');
-  //   newscript.type = 'text/javascript';
-  //   newscript.async = false;
-  //   newscript.src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js';
-  // document.getElementsByTagName('head')[0].appendChild(newscript);
-  // }
+
   
     function loadSCRIPT(url){
   var newscript = document.createElement('script');
@@ -100,8 +83,7 @@ function unloadCSS(cssName)
  
   
   function AddFormControl(){
-     //$( "input" ).removeAttr('background');
-     //$("link[href*=webforms]").remove();
+  
      
      unloadCSS('webforms');
      $("[type='button']").addClass("btn");
@@ -110,7 +92,7 @@ function unloadCSS(cssName)
     $( "select" ).each(function( index ) {
         $( this ).addClass("form-control");
       });
-      $("[type='button']").each(function( index ) {
+      $("[type='text']").each(function( index ) {
         $( this ).addClass("form-control");
       });
      
