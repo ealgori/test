@@ -89,7 +89,7 @@ function unloadCSS(cssName)
       $("#formDiv").find("[type='text']").addClass('form-control');
       $("#formDiv > table>tbody>tr>td>div>table>tbody>tr>td>table:eq(0)").addClass('table table-striped table-hover');
       $("#formDiv > table>tbody>tr>td>div>table>tbody>tr>td>table>tbody>tr").addClass('form-inline');
-      $("#dataTable>tbody>tr>td>table").css('width','57%');
+      $("#dataTable>tbody>tr>td>table").css('width','64%');
      
         
       console.log('forms-control setted');
