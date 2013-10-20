@@ -32,7 +32,9 @@ function waitJqLoaded() {
 function jqLoaded()
 {
   console.log('jquery loaded');
-  initBootstrap();
+  loadCSS('https://rawgithub.com/surgerer/test/master/bootstrap.css');
+  loadSCRIPT('https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js');
+  //initBootstrap();
  // unloadCss('webforms');
   AddFormControl();
  
@@ -62,8 +64,17 @@ function jqLoaded()
   // document.getElementsByTagName('head')[0].appendChild(newscript);
   // }
   
-  function initBootstrap(){
-  var el = document; // shortcut
+    function loadSCRIPT(url){
+  var newscript = document.createElement('script');
+    newscript.type = 'text/javascript';
+    newscript.async = false;
+    newscript.src = url;
+  document.getElementsByTagName('head')[0].appendChild(newscript);
+  }
+  
+  function loadCSS(url)
+  {
+    var el = document; // shortcut
   var cssId = 'myCss';  // you could encode the css path itself to generate id..
   if (!el.getElementById(cssId))
   {
@@ -72,13 +83,31 @@ function jqLoaded()
       link.id   = cssId;
       link.rel  = 'stylesheet';
       link.type = 'text/css';
-      link.href = 'https://rawgithub.com/surgerer/test/master/bootstrap.css';
+      link.href = url;
       link.media = 'all';
       head.appendChild(link);
-      console.log('bootstrap loaded');
+      console.log(url+' loaded');
+  }
   }
   
-  }
+  
+  // function initBootstrap(){
+  // var el = document; // shortcut
+  // var cssId = 'myCss';  // you could encode the css path itself to generate id..
+  // if (!el.getElementById(cssId))
+  // {
+  //     var head  = el.getElementsByTagName('head')[0];
+  //     var link  = el.createElement('link');
+  //     link.id   = cssId;
+  //     link.rel  = 'stylesheet';
+  //     link.type = 'text/css';
+  //     link.href = 'https://rawgithub.com/surgerer/test/master/bootstrap.css';
+  //     link.media = 'all';
+  //     head.appendChild(link);
+  //     console.log('bootstrap loaded');
+  // }
+  
+  // }
   
   function AddFormControl(){
      //$( "input" ).removeAttr('background');
