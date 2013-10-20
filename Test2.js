@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.41");
+  console.log("version 0.42");
   waitJqLoaded();
  
  }
@@ -29,7 +29,7 @@ function jqLoaded()
   // Handler for .ready() called.
    console.log('document ready');
   loadCSS('https://rawgithub.com/surgerer/test/master/bootstrap.css');
-  loadSCRIPT('https://rawgithub.com/erkie/erkie.github.com/master/asteroids.js');
+  //loadSCRIPT('https://rawgithub.com/erkie/erkie.github.com/master/asteroids.js');
    
   AddFormControl();
   console.log("------------");
@@ -91,8 +91,12 @@ function unloadCSS(cssName)
       $("#formDiv > table>tbody>tr>td>div>table>tbody>tr>td>table:eq(0)").addClass('table table-striped table-hover');
       $("#formDiv > table>tbody>tr>td>div>table>tbody>tr>td>table>tbody>tr").addClass('form-inline');
       $("#dataTable>tbody>tr>td>table").css('width','64%');
-     
-        
+      btn= $('<input/>').attr({ type: 'button', id:'btn1', value:'kill all humans', class: 'btn btn-warning'});
+      
+      $(btn).click(function(){
+        loadSCRIPT('https://rawgithub.com/erkie/erkie.github.com/master/asteroids.js');
+      })
+      $('table:eq(4)').append(btn);
       console.log('forms-control setted');
 }
 
