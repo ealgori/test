@@ -2,7 +2,7 @@
   
  
  function init(){
-  console.log("version 0.22");
+  console.log("version 0.23");
   waitJqLoaded();
  
  }
@@ -96,10 +96,10 @@ function unloadCSS(cssName)
      $("[name='DeleteObjectButton']").addClass("btn-danger");
      $("textarea").addClass("form-control");
      
-    $( "select" ).each(function( index ) {
-        $( this ).addClass("form-control");
-      });
-      
+    // $( "select" ).each(function( index ) {
+    //     $( this ).addClass("form-control");
+    //   });
+      $("#formDiv").find("select").addClass('form-control');
       $("#formDiv").find("[type='text']").addClass('form-control');
      
      
