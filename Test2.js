@@ -105,7 +105,11 @@ function unloadCSS(cssName)
      $("[type='button']").addClass("btn");
      $("[name='CreateNewObjectButton']").addClass("btn-success");
      $("[name='DeleteObjectButton']").addClass("btn-danger");
-     $("select").select2();
+     $( "select" ).each(function( index ) {
+        $( this ).select2();
+      });
+     
+     
      // $('input').addClass('form-control');    
       console.log('forms-control setted');
 }
