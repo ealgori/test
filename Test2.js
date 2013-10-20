@@ -81,8 +81,11 @@ function jqLoaded()
   }
   
   function AddFormControl(){
-     $( "input" ).removeAttr('background');
-     $("[name='CreateNewObjectButton']").addClass("btn btn-success");
+     //$( "input" ).removeAttr('background');
+     $("link[href*=webforms]").remove();
+     ("[type='button']").addClass("btn");
+     $("[name='CreateNewObjectButton']").addClass("btn-success");
+     $("[name='DeleteObjectButton']").addClass("btn-danger");
      // $('input').addClass('form-control');    
       console.log('forms-control setted');
 }
