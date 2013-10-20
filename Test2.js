@@ -45,7 +45,7 @@ function unloadCSS(cssName)
 {
   $("link[href*="+cssName+"]").attr("disabled", "disabled");
  //$("link[href*=webforms]").remove(); 
-  console.log(url +'unloaded');
+  console.log(cssName +'unloaded');
 }
 // function iFrameExist(){
 //   console.log('iframe exist');
@@ -69,7 +69,8 @@ function unloadCSS(cssName)
     newscript.type = 'text/javascript';
     newscript.async = false;
     newscript.src = url;
-  document.getElementsByTagName('head')[0].appendChild(newscript);
+    document.getElementsByTagName('head')[0].appendChild(newscript);
+     console.log(url+' loaded');
   }
   
   function loadCSS(url)
