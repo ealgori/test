@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.35");
+  console.log("version 0.36");
   waitJqLoaded();
  
  }
@@ -28,14 +28,8 @@ function jqLoaded()
   $( document ).ready(function() {
   // Handler for .ready() called.
    console.log('document ready');
-   
-  //loadCSS('https://rawgithub.com/surgerer/test/master/select2.css');
-  //loadCSS('https://rawgithub.com/surgerer/test/master/bootstrap.css');
+  loadCSS('https://rawgithub.com/surgerer/test/master/bootstrap.css');
    //loadSCRIPT('https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js');
-  
- // loadSCRIPT('https://rawgithub.com/surgerer/test/master/select2.js');
-  
-
   AddFormControl();
   console.log("------------");
   })
@@ -82,22 +76,21 @@ function unloadCSS(cssName)
   
   function AddFormControl(){
   
+     unloadCSS('webforms');
+    $("[type='button']").addClass("btn");
+    $("[name='CreateNewObjectButton']").addClass("btn-success");
+    $("[name='DeleteObjectButton']").addClass("btn-danger");
+    $("textarea").addClass("form-control");
      
-    // unloadCSS('webforms');
-    // $("[type='button']").addClass("btn");
-    // $("[name='CreateNewObjectButton']").addClass("btn-success");
-    // $("[name='DeleteObjectButton']").addClass("btn-danger");
-    // $("textarea").addClass("form-control");
-     
-    // // $( "select" ).each(function( index ) {
-    // //     $( this ).addClass("form-control");
-    // //   });
-    //   $("#formDiv").find("select").addClass('form-control');
-    //   $("#formDiv").find("[type='text']").addClass('form-control');
-    //   $("#formDiv > table>tbody>tr>td>div>table>tbody>tr>td>table:eq(0)").addClass('table table-striped');
+    // $( "select" ).each(function( index ) {
+    //     $( this ).addClass("form-control");
+    //   });
+      $("#formDiv").find("select").addClass('form-control');
+      $("#formDiv").find("[type='text']").addClass('form-control');
+      $("#formDiv > table>tbody>tr>td>div>table>tbody>tr>td>table:eq(0)").addClass('table table-striped');
      
      
-     // $('input').addClass('form-control');    
+        
       console.log('forms-control setted');
 }
 
