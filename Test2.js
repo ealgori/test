@@ -2,7 +2,7 @@
   
  
  function init(){
-  console.log("version 0.19");
+  console.log("version 0.20");
   waitJqLoaded();
  
  }
@@ -100,7 +100,7 @@ function unloadCSS(cssName)
         $( this ).addClass("form-control");
       });
       $("[type='text']").each(function( index ) {
-        if($(this).prop( "name" )!='objects'||$(this).prop( "name" )!='pattern')
+        if($(this).attr( "name" )!='objects'||$(this).attr( "name" )!='pattern')
           $( this ).addClass("form-control");
       });
      
