@@ -83,17 +83,17 @@ function unloadCSS(cssName)
   
      
      unloadCSS('webforms');
-     $("[type='button']").addClass("btn");
-     $("[name='CreateNewObjectButton']").addClass("btn-success");
-     $("[name='DeleteObjectButton']").addClass("btn-danger");
-     $("textarea").addClass("form-control");
+    // $("[type='button']").addClass("btn");
+    // $("[name='CreateNewObjectButton']").addClass("btn-success");
+    // $("[name='DeleteObjectButton']").addClass("btn-danger");
+    // $("textarea").addClass("form-control");
      
-    // $( "select" ).each(function( index ) {
-    //     $( this ).addClass("form-control");
-    //   });
-      $("#formDiv").find("select").addClass('form-control');
-      $("#formDiv").find("[type='text']").addClass('form-control');
-      $("#formDiv > table>tbody>tr>td>div>table>tbody>tr>td>table:eq(0)").addClass('table table-striped');
+    // // $( "select" ).each(function( index ) {
+    // //     $( this ).addClass("form-control");
+    // //   });
+    //   $("#formDiv").find("select").addClass('form-control');
+    //   $("#formDiv").find("[type='text']").addClass('form-control');
+    //   $("#formDiv > table>tbody>tr>td>div>table>tbody>tr>td>table:eq(0)").addClass('table table-striped');
      
      
      // $('input').addClass('form-control');    
