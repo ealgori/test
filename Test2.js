@@ -2,7 +2,7 @@
   
  
  function init(){
-  console.log("version 0.15");
+  console.log("version 0.16");
   waitJqLoaded();
  
  }
@@ -37,13 +37,14 @@ function jqLoaded()
    console.log('document ready');
   
   //loadCSS('https://rawgithub.com/surgerer/test/master/select2.css');
-  //loadCSS('https://rawgithub.com/surgerer/test/master/bootstrap.css');
+  loadCSS('https://rawgithub.com/surgerer/test/master/bootstrap.css');
    //loadSCRIPT('https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js');
   
  // loadSCRIPT('https://rawgithub.com/surgerer/test/master/select2.js');
   
 
   //AddFormControl();
+  console.log("------------");
   })
 }
 
