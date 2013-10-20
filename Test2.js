@@ -2,7 +2,7 @@
   
  
  function init(){
-  console.log("version 0.11");
+  console.log("version 0.12");
   waitJqLoaded();
  
  }
@@ -107,9 +107,12 @@ function unloadCSS(cssName)
      $("[type='button']").addClass("btn");
      $("[name='CreateNewObjectButton']").addClass("btn-success");
      $("[name='DeleteObjectButton']").addClass("btn-danger");
-    // $( "select" ).each(function( index ) {
-    //     $( this ).select2();
-    //   });
+    $( "select" ).each(function( index ) {
+        $( this ).addClass("form-control");
+      });
+      $("[type='button']").each(function( index ) {
+        $( this ).addClass("form-control");
+      });
      
      
      // $('input').addClass('form-control');    
