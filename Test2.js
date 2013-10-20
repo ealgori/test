@@ -2,7 +2,7 @@
   
  
  function init(){
-  console.log("version 0.20");
+  console.log("version 0.22");
   waitJqLoaded();
  
  }
@@ -99,10 +99,9 @@ function unloadCSS(cssName)
     $( "select" ).each(function( index ) {
         $( this ).addClass("form-control");
       });
-      $("[type='text']").each(function( index ) {
-        if($(this).attr( "name" )!='objects'||$(this).attr( "name" )!='pattern')
-          $( this ).addClass("form-control");
-      });
+      
+      $("#formDiv").find("[type='text']").addClass('form-control');
+     
      
      
      // $('input').addClass('form-control');    
