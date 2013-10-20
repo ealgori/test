@@ -94,6 +94,8 @@ function unloadCSS(cssName)
      $("[type='button']").addClass("btn");
      $("[name='CreateNewObjectButton']").addClass("btn-success");
      $("[name='DeleteObjectButton']").addClass("btn-danger");
+     $("textarea").addClass("form-control");
+     
     $( "select" ).each(function( index ) {
         $( this ).addClass("form-control");
       });
