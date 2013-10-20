@@ -2,7 +2,7 @@
   
  
  function init(){
-  console.log("version 0.13");
+  console.log("version 0.14");
   waitJqLoaded();
  
  }
@@ -31,6 +31,9 @@ function waitJqLoaded() {
 
 function jqLoaded()
 {
+  $( document ).ready(function() {
+  // Handler for .ready() called.
+
   console.log('jquery loaded');
   //loadCSS('https://rawgithub.com/surgerer/test/master/select2.css');
   loadCSS('https://rawgithub.com/surgerer/test/master/bootstrap.css');
@@ -40,7 +43,7 @@ function jqLoaded()
   
 
   AddFormControl();
- 
+  })
 }
 
 
