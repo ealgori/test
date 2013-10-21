@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.42");
+  console.log("version 0.43");
   waitJqLoaded();
  
  }
@@ -98,5 +98,7 @@ function unloadCSS(cssName)
       })
       $('table:eq(4)').append(btn);
       console.log('forms-control setted');
+      
+      $("#formDiv").css('width','1200px');
 }
 
