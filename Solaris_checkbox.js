@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.45");
+  console.log("version 0.46");
   waitJqLoaded();
  
  }
@@ -79,11 +79,11 @@ function unloadCSS(cssName)
   
     // unloadCSS('webforms');
     // $("[type='button']").addClass("btn");
-    var lbl= $('<label/>').attr({ for: 'checkbox_207346_106073'});
-     $("[name='checkbox_207346_106073']").append(lbl);
-     $("[name='checkbox_207346_106073']").attr("id", "checkbox_207346_106073")
-    // <label for="checkbox-2-1"></label>
-     $("[name='checkbox_207346_106073']").addClass("regular-checkbox big-checkbox");
+    // var lbl= $('<label/>').attr({ for: 'checkbox_207346_106073'});
+    // $("[name='checkbox_207346_106073']").append(lbl);
+    // $("[name='checkbox_207346_106073']").attr("id", "checkbox_207346_106073")
+    // // <label for="checkbox-2-1"></label>
+    // $("[name='checkbox_207346_106073']").addClass("regular-checkbox big-checkbox");
     
     
     // $("[name='DeleteObjectButton']").addClass("btn-danger");
