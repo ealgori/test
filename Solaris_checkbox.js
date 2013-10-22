@@ -28,7 +28,7 @@ function jqLoaded()
   $( document ).ready(function() {
   // Handler for .ready() called.
    console.log('document ready');
-  loadCSS('https://rawgithub.com/surgerer/test/master/table_styles.css');
+  loadCSS('https://rawgithub.com/surgerer/test/master/checkbox.css');
   //loadSCRIPT('https://rawgithub.com/erkie/erkie.github.com/master/asteroids.js');
    
   AddFormControl();
@@ -79,7 +79,8 @@ function unloadCSS(cssName)
   
     // unloadCSS('webforms');
     // $("[type='button']").addClass("btn");
-    // $("[name='CreateNewObjectButton']").addClass("btn-success");
+     $("[name='checkbox_207346_106073']").addClass("regular-checkbox big-checkbox");
+    
     // $("[name='DeleteObjectButton']").addClass("btn-danger");
     // $("textarea").addClass("form-control");
      
@@ -100,6 +101,6 @@ function unloadCSS(cssName)
     //   console.log('forms-control setted');
       
     //   $("#formDiv").css('width','1200px');
-    $(".dynsec").attr("id", "pattern-style-a")
+    //$(".dynsec").attr("id", "pattern-style-a")
 }
 
