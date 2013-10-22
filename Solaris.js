@@ -100,6 +100,6 @@ function unloadCSS(cssName)
     //   console.log('forms-control setted');
       
     //   $("#formDiv").css('width','1200px');
-    $(".dynsec").attr("id", "box-table-a")
+    $(".dynsec").attr("id", "pattern-style-a")
 }
 
