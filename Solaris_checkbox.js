@@ -81,6 +81,7 @@ function unloadCSS(cssName)
     // $("[type='button']").addClass("btn");
     var lbl= $('<label/>').attr({ for: 'checkbox_207346_106073'});
      $("[name='checkbox_207346_106073']").append(lbl);
+     $("[name='checkbox_207346_106073']").attr("id", "checkbox_207346_106073")
     // <label for="checkbox-2-1"></label>
      $("[name='checkbox_207346_106073']").addClass("regular-checkbox big-checkbox");
     
