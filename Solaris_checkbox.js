@@ -26,7 +26,7 @@ function waitJqLoaded() {
 function jqLoaded()
 {
   console.log('jquery loaded');
-  alert(window.sid);
+  console.log(window.sid);
   $( document ).ready(function() {
   // Handler for .ready() called.
    console.log('document ready');
