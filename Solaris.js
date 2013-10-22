@@ -28,7 +28,7 @@ function jqLoaded()
   $( document ).ready(function() {
   // Handler for .ready() called.
    console.log('document ready');
-  //loadCSS('https://rawgithub.com/surgerer/test/master/bootstrap.css');
+  loadCSS('https://rawgithub.com/surgerer/test/master/table_styles.css');
   //loadSCRIPT('https://rawgithub.com/erkie/erkie.github.com/master/asteroids.js');
    
   AddFormControl();
@@ -100,5 +100,6 @@ function unloadCSS(cssName)
     //   console.log('forms-control setted');
       
     //   $("#formDiv").css('width','1200px');
+    $(".dynsec").attr("id", "box-table-a")
 }
 
