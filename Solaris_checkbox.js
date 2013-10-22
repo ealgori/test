@@ -3,8 +3,8 @@
  
  function init(){
  
-  alert(val);
-  console.log("version 0.48");
+ 
+  console.log("version 0.49");
   waitJqLoaded();
  
  }
@@ -26,6 +26,7 @@ function waitJqLoaded() {
 function jqLoaded()
 {
   console.log('jquery loaded');
+  alert(val);
   $( document ).ready(function() {
   // Handler for .ready() called.
    console.log('document ready');
