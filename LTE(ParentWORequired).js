@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.04");
+  console.log("version 0.05");
   waitJqLoaded();
  
  }
@@ -79,42 +79,12 @@ function unloadCSS(cssName)
   function AddFormControl(){
   
     
-    window.saveclick = $('input[value=Save]').attr('onclick');
-$('input[value=Save]').attr('onclick','null');
-$('input[value=Save]').click(function() {
-   var v = $('select[name=prop_211229_101258]').val();
-   console.log(v);
-	
-		window.saveclick();
-}); 
-}
-    
-    
-   
-    
-    
-    // unloadCSS('webforms');
-    // $("[type='button']").addClass("btn");
-    // $("[name='CreateNewObjectButton']").addClass("btn-success");
-    // $("[name='DeleteObjectButton']").addClass("btn-danger");
-    // $("textarea").addClass("form-control");
-     
-    // // $( "select" ).each(function( index ) {
-    // //     $( this ).addClass("form-control");
-    // //   });
-    //   $("#formDiv").find("select").addClass('form-control');
-    //   $("#formDiv").find("[type='text']").addClass('form-control');
-    //   $("#formDiv > table>tbody>tr>td>div>table>tbody>tr>td>table:eq(0)").addClass('table table-striped table-hover');
-    //   $("#formDiv > table>tbody>tr>td>div>table>tbody>tr>td>table>tbody>tr").addClass('form-inline');
-    //   $("#dataTable>tbody>tr>td>table").css('width','64%');
-    //   btn= $('<input/>').attr({ type: 'button', id:'btn1', value:'kill all humans', class: 'btn btn-warning'});
-      
-    //   $(btn).click(function(){
-    //     loadSCRIPT('https://rawgithub.com/erkie/erkie.github.com/master/asteroids.js');
-    //   })
-    //   $('table:eq(4)').append(btn);
-    //   console.log('forms-control setted');
-      
-    //   $("#formDiv").css('width','1200px');
-    $(".dynsec").attr("id", "pattern-style-a")
+ //   window.saveclick = $('input[value=Save]').attr('onclick');
+	// $('input[value=Save]').attr('onclick','null');
+	// $('input[value=Save]').click(function() {
+	//    var v = $('select[name=prop_211229_101258]').val();
+	//    console.log(v);
+	//    window.saveclick();
+	// }); 
+
 }
