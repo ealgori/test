@@ -79,12 +79,12 @@ function unloadCSS(cssName)
   function AddFormControl(){
   
     
-    window.saveclick = $('input[value=Save]').attr('onclick');
-	$('input[value=Save]').attr('onclick','null');
-	$('input[value=Save]').click(function(event) {
-	   var v = $('select[name=prop_211229_101258]').val();
-	   console.log(v);
-	   window.saveclick(event);
-	}); 
+ //   window.saveclick = $('input[value=Save]').attr('onclick');
+	// $('input[value=Save]').attr('onclick','null');
+	// $('input[value=Save]').click(function(event) {
+	//    var v = $('select[name=prop_211229_101258]').val();
+	//    console.log(v);
+	//    window.saveclick(event);
+	// }); 
 
 }
