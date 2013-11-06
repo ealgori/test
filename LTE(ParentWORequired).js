@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.02");
+  console.log("version 0.03");
   waitJqLoaded();
  
  }
@@ -30,7 +30,7 @@ function jqLoaded()
    console.log('document ready');
   //loadCSS('https://rawgithub.com/surgerer/test/master/table_styles.css');
   //loadSCRIPT('https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js');
-  loadSCRIPT('https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js');
+
   
   AddFormControl();
   console.log("------------");
@@ -79,15 +79,17 @@ function unloadCSS(cssName)
   function AddFormControl(){
   
     
-    $("[name='server']").validate({
-    messages: {
-     prop_107395_101259: {
-      required: "Please select an option from the list, if none are appropriate please select 'Other'",
-     },
-    }
-});
+    window.saveclick = $('input[value=Save]').attr('onclick');
+$('input[value=Save]').attr('onclick','null');
+$('input[value=Save]').click(function() {
+   var v = $('select[name=prop_211229_101258]').val();
+   console.log(v);
+	
+		window.saveclick();
+}); 
     
-    prop_107395_101259
+    
+   
     
     
     // unloadCSS('webforms');
