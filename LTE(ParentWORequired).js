@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.03");
+  console.log("version 0.04");
   waitJqLoaded();
  
  }
@@ -87,6 +87,7 @@ $('input[value=Save]').click(function() {
 	
 		window.saveclick();
 }); 
+}
     
     
    
