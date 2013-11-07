@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.10");
+  console.log("version 0.11");
   waitJqLoaded();
  
  }
@@ -85,12 +85,13 @@ function unloadCSS(cssName)
   
 	//   var wind = document.getElementById('iframe').contentWindow;
 	var wind = window;
+	
 	wind.$('input[value=Save]').attr('onclick','null');
 	wind.$('input[value=Save]').click(function(event) {
-	         var wotype = wind.$('select[name=prop_230621_101259]').val();
+	         var wotype = wind.$("td[title$='WO Type']>select").val();
 	         if((wotype==101913)||(wotype==111405))
 	         {
-	         	 var parentwo = wind.$('select[name=objnameprop_0_101643]').val().trim();
+	         	 var parentwo = wind.$('select[name=objnameprop_0_101643]').val();
 	         	 console.log(parentwo);
 	         	 if (!parentwo)
 	         	 {
