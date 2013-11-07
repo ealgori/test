@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.08");
+  console.log("version 0.09");
   waitJqLoaded();
  
  }
@@ -73,7 +73,12 @@ function unloadCSS(cssName)
   }
   }
   
-  
+  function SubmitForm(wind)
+  {
+  	 wind.keepFilter();
+			 if (wind.checkSaveAsNew()) 
+			 	wind.submitAction('SaveObjectButton',"server");
+  }
  
   
   function AddFormControl(){
@@ -82,11 +87,25 @@ function unloadCSS(cssName)
 	var wind = window;
 	wind.$('input[value=Save]').attr('onclick','null');
 	wind.$('input[value=Save]').click(function(event) {
-	        //    var v = wind.$('select[name=prop_211229_101258]').val();
-	        alert('hello world');
-	         wind.keepFilter();
-			 if (wind.checkSaveAsNew()) 
-			 	wind.submitAction('SaveObjectButton',"server")
+	         var wotype = wind.$('select[name=prop_230621_101259]').val();
+	         if((wotype==101913)||(wotype==111405))
+	         {
+	         	 var parentwo = wind.$('select[name=objnameprop_0_101643]').val();
+	         	 if (!parentwo)
+	         	 {
+	         	 	alert('Для типов Cancellation и Supplement поле ParentWO должно быть заполнено');	
+	         	 }
+	         	 else
+	         	 {
+	         	 	SubmitForm(wind);	
+	         	 }
+	         }
+	         else
+	         {
+	         	SubmitForm(wind);
+	         }
+	        
+	        
 				
 	        
 	         }); 
