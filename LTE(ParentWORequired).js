@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.07");
+  console.log("version 0.08");
   waitJqLoaded();
  
  }
@@ -79,7 +79,7 @@ function unloadCSS(cssName)
   function AddFormControl(){
   
 	//   var wind = document.getElementById('iframe').contentWindow;
-	var wind = window();
+	var wind = window;
 	wind.$('input[value=Save]').attr('onclick','null');
 	wind.$('input[value=Save]').click(function(event) {
 	        //    var v = wind.$('select[name=prop_211229_101258]').val();
