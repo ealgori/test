@@ -89,12 +89,12 @@ function unloadCSS(cssName)
 	wind.$('input[value=Save]').attr('onclick','null');
 	wind.$('input[value=Save]').click(function(event) {
 	         var wotype = wind.$("td[title$='WO Type']>select").val();
-	         if((wotype==101913)||(wotype==111405))
+	         if((wotype==101913)||(wotype==111405)||(wotype==117348))
 	         {
 	         	 var parentwo = wind.$("td[title$='Parent WO']>input").val();;
 	              	 if (!parentwo)
 	         	 {
-	         	 	alert('Для типов Cancellation и Supplement поле ParentWO должно быть заполнено');	
+	         	 	alert('Для типов Cancellation, Supplement и Change поле ParentWO должно быть заполнено');	
 	         	 }
 	         	 else
 	         	 {
