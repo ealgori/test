@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.06");
+  console.log("version 0.07");
   waitJqLoaded();
  
  }
@@ -78,7 +78,18 @@ function unloadCSS(cssName)
   
   function AddFormControl(){
   
-    
+	//   var wind = document.getElementById('iframe').contentWindow;
+	var wind = window();
+	wind.$('input[value=Save]').attr('onclick','null');
+	wind.$('input[value=Save]').click(function(event) {
+	        //    var v = wind.$('select[name=prop_211229_101258]').val();
+	        alert('hello world');
+	         wind.keepFilter();
+			 if (wind.checkSaveAsNew()) 
+			 	wind.submitAction('SaveObjectButton',"server")
+				
+	        
+	         }); 
  //   window.saveclick = $('input[value=Save]').attr('onclick');
 	// $('input[value=Save]').attr('onclick','null');
 	// $('input[value=Save]').click(function(event) {
