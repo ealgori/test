@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.09");
+  console.log("version 0.10");
   waitJqLoaded();
  
  }
@@ -90,7 +90,8 @@ function unloadCSS(cssName)
 	         var wotype = wind.$('select[name=prop_230621_101259]').val();
 	         if((wotype==101913)||(wotype==111405))
 	         {
-	         	 var parentwo = wind.$('select[name=objnameprop_0_101643]').val();
+	         	 var parentwo = wind.$('select[name=objnameprop_0_101643]').val().trim();
+	         	 console.log(parentwo);
 	         	 if (!parentwo)
 	         	 {
 	         	 	alert('Для типов Cancellation и Supplement поле ParentWO должно быть заполнено');	
