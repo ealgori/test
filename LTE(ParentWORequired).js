@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.13");
+  console.log("version 0.14");
   waitJqLoaded();
  
  }
@@ -83,7 +83,7 @@ function unloadCSS(cssName)
   
   function AddFormControl(){
   
-	var wind = document.getElementById('iframe').contentWindow;
+	//var wind = document.getElementById('iframe').contentWindow;
 	var wind = window;
 	
 	wind.$('input[value=Save]').attr('onclick','null');
