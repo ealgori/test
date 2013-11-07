@@ -84,39 +84,33 @@ function unloadCSS(cssName)
   function AddFormControl(){
   
 	//   var wind = document.getElementById('iframe').contentWindow;
-	var wind = window;
+	// var wind = window;
 	
-	wind.$('input[value=Save]').attr('onclick','null');
-	wind.$('input[value=Save]').click(function(event) {
-	         var wotype = wind.$("td[title$='WO Type']>select").val();
-	         if((wotype==101913)||(wotype==111405))
-	         {
-	         	 var parentwo = wind.$('select[name=objnameprop_0_101643]').val();
-	         	 console.log(parentwo);
-	         	 if (!parentwo)
-	         	 {
-	         	 	alert('Для типов Cancellation и Supplement поле ParentWO должно быть заполнено');	
-	         	 }
-	         	 else
-	         	 {
-	         	 	SubmitForm(wind);	
-	         	 }
-	         }
-	         else
-	         {
-	         	SubmitForm(wind);
-	         }
+	// wind.$('input[value=Save]').attr('onclick','null');
+	// wind.$('input[value=Save]').click(function(event) {
+	//          var wotype = wind.$("td[title$='WO Type']>select").val();
+	//          if((wotype==101913)||(wotype==111405))
+	//          {
+	//          	 var parentwo = wind.$('select[name=objnameprop_0_101643]').val();
+	//          	 console.log(parentwo);
+	//          	 if (!parentwo)
+	//          	 {
+	//          	 	alert('Для типов Cancellation и Supplement поле ParentWO должно быть заполнено');	
+	//          	 }
+	//          	 else
+	//          	 {
+	//          	 	SubmitForm(wind);	
+	//          	 }
+	//          }
+	//          else
+	//          {
+	//          	SubmitForm(wind);
+	//          }
 	        
 	        
 				
 	        
-	         }); 
- //   window.saveclick = $('input[value=Save]').attr('onclick');
-	// $('input[value=Save]').attr('onclick','null');
-	// $('input[value=Save]').click(function(event) {
-	//    var v = $('select[name=prop_211229_101258]').val();
-	//    console.log(v);
-	//    window.saveclick(event);
-	// }); 
+	//          }); 
+ 
 
 }
