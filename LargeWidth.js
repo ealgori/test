@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.01");
+  console.log("version 0.02");
   waitJqLoaded();
  
  }
@@ -84,13 +84,13 @@ function unloadCSS(cssName)
   function AddFormControl(){
   
 	//var wind = document.getElementById('iframe').contentWindow;
-	if(window.width)
+	if(window.w)
 	{
   	var wind = window;
-  	wind.$('div[id=formDiv]').css('width','1200px');
+  	wind.$('div[id=formDiv]').css('width',w);
 	}
 	else
-	  console.log('no width');
+	  console.log('no width specified');
   
  
 
