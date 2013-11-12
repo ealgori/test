@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.04");
+  console.log("version 0.05");
   waitJqLoaded();
  
  }
@@ -85,10 +85,14 @@ function unloadCSS(cssName)
   
 	//var wind = document.getElementById('iframe').contentWindow;
 	var wind = window;
+	var selector = 'div[id=formDiv]';
+	$(selector).resize(function() {
+  		conslole.log('new width '+ $(selector).width()));
+});
 	if(wind.w)
 	{
   	
-  		var selector = 'div[id=formDiv]';
+  		
   		wind.$(selector).css('width',wind.w);
   		console.log(selector +' width set to '+wind.w+'px');
 	}
