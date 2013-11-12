@@ -90,7 +90,7 @@ function unloadCSS(cssName)
   	
   		var selector = 'div[id=formDiv]';
   		wind.$(selector).css('width',wind.w);
-  		console.log(selector +' width set to'+wind.w);
+  		console.log(selector +' width set to '+wind.w+'px');
 	}
 	else
 	  console.log('no width specified');
