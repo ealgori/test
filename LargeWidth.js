@@ -87,7 +87,7 @@ function unloadCSS(cssName)
 	var wind = window;
 	var selector = 'div[id=formDiv]';
 	$(selector).resize(function() {
-  		conslole.log('new width '+ $(selector).width()));
+  		conslole.log('new width '+ $(selector).width());
 });
 	if(wind.w)
 	{
