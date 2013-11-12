@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.05");
+  console.log("version 0.06");
   waitJqLoaded();
  
  }
@@ -86,8 +86,8 @@ function unloadCSS(cssName)
 	//var wind = document.getElementById('iframe').contentWindow;
 	var wind = window;
 	var selector = 'div[id=formDiv]';
-	$(selector).resize(function() {
-  		conslole.log('new width '+ $(selector).width());
+	wind.$(selector).resize(function() {
+  		conslole.log('new width '+ wind.$(selector).width());
 });
 	if(wind.w)
 	{
