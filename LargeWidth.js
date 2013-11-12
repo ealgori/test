@@ -3,7 +3,7 @@
  
  function init(){
  
-  console.log("version 0.03");
+  console.log("version 0.04");
   waitJqLoaded();
  
  }
@@ -88,8 +88,9 @@ function unloadCSS(cssName)
 	if(wind.w)
 	{
   	
-  	console.log(wind.w);
-  	wind.$('div[id=formDiv]').css('width',wind.w);
+  		var selector = 'div[id=formDiv]';
+  		wind.$(selector).css('width',wind.w);
+  		console.log(selector +' width set to'+wind.w);
 	}
 	else
 	  console.log('no width specified');
