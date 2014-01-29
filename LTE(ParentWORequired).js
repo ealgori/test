@@ -89,12 +89,6 @@ function unloadCSS(cssName)
 	wind.$('input[value=Save]').attr('onclick','null');
 	wind.$('input[value=Save]').click(function(event) {
 		var wotype = wind.$("td[title$='WO Type']>select").val();
-	         var wostatus = wind.$("td[title$='WO Status']>select").val();
-	         if(wostatus==104528)
-		{
-			
-			alert('Blank');
-		}
 	         if((wotype==101913)||(wotype==111405)||(wotype==117348))
 	         {
 	         	 var parentwo = wind.$("td[title$='Parent WO']>input[name^='prop']").val();
