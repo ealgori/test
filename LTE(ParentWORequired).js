@@ -88,8 +88,8 @@ function unloadCSS(cssName)
 	
 	wind.$('input[value=Save]').attr('onclick','null');
 	wind.$('input[value=Save]').click(function(event) {
-		var wotype = wind.$("td[title$='WO For']>select").val();
-	         var wofor = wind.$("td[title$='WO Type']>select").val();
+		var wotype = wind.$("td[title$='WO Type']>select").val();
+	         var wofor = wind.$("td[title$='WO For']>select").val();
 	         if(wofor==104528)
 		{
 			
