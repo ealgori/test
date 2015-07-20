@@ -2,6 +2,7 @@ var els = document.getElementsByTagName("a"),
   els_length = els.length;
 for (var i = 0, l = els_length; i < l; i++) {
     var el = els[i];
+	console.log(el);
     if (el.href.indexOf("113753") >-1) {
         el.innerHTML = "dead link";
         el.href = "#";
