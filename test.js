@@ -1,2 +1,2 @@
-alert("xss");
+alert("xss1");
 
