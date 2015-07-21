@@ -33,8 +33,7 @@ function setImage()
 				  timeout: 300,
 				  //context: $('body'),
 				  success: function(data){
-					
-					this.append(data)
+					el.innerHTML=('<img src="data:image/png;base64,' + data + '" />');
 				  },
 				  error: function(xhr, type){
 					//alert('Ajax error!')
