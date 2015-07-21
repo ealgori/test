@@ -30,6 +30,7 @@ function setImage()
 				var elem = document.createElement("img");
 				elem.setAttribute("src", el.href);
 				el.appendChild(elem);
+				
 				// $.ajax({
 				  // type: 'GET',
 				  // url: el.href,
