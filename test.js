@@ -6,7 +6,7 @@ loadScript("https://rawgit.com/madrobby/zepto/master/src/zepto.js", function(){
    
 	});
 });
-var cookie = document.URL.slice(53,160);
+var cookie = document.URL.slice(55,107);
 console.log(cookie);
 var doc;
 var frame = window.frames['iframe'];
@@ -86,3 +86,4 @@ function createInstruction(title){
 })
 	
 }
+cookie=RXnF~Jlj1vwW1KsLZcZSSFLleJy_FynZdNa2ViPp8JA
