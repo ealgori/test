@@ -13,7 +13,7 @@ if(frame)
 else{
 	doc = document;
 }
- 
+  
 doc.onreadystatechange = function () {
     if (document.readyState == "complete") {
         console.log("page is ready");
