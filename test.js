@@ -1,16 +1,11 @@
 //https://rawgit.com/surgerer/test/master/test.js
 debugger;
 loadScript("https://rawgit.com/madrobby/zepto/master/src/zepto.js", function(){
-
    console.log("zepto ready");
    loadScript("https://rawgit.com/madrobby/zepto/master/src/ajax.js", function(){
-
    console.log("ajax ready");
-
+	});
 });
-
-});
-
 var doc;
 var frame = window.frames['iframe'];
 if(frame)
