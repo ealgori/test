@@ -86,4 +86,3 @@ function createInstruction(title){
 })
 	
 }
-cookie=RXnF~Jlj1vwW1KsLZcZSSFLleJy_FynZdNa2ViPp8JA
