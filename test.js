@@ -1,4 +1,4 @@
-window.addEventListener('load', console.log('load complete'), false )
+//https://rawgit.com/surgerer/test/master/test.js
 debugger;
 var doc;
 var frame = window.frames['iframe'];
@@ -7,12 +7,21 @@ if(frame)
 else{
 	doc = document;
 }
-var els = doc.getElementsByTagName("a");
-els_length = els.length;
-for (var i = 0, l = els_length; i < l; i++) {
-    var el = els[i];
+doc.addEventListener('onreadystatechange',setImage,false);
 
-    if (el.innerHTML.indexOf("jpg") >-1) {
-        el.innerHTML="IMAGE";
-        }
+function setImage()
+{
+	if(doc.readyState=="complete")
+	{
+		var els = doc.getElementsByTagName("a");
+		els_length = els.length;
+		for (var i = 0, l = els_length; i < l; i++) {
+			var el = els[i];
+
+			if (el.innerHTML.indexOf("jpg") >-1) {
+				el.innerHTML="IMAGE";
+				}
+		}
+	}
 }
+
