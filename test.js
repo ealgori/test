@@ -29,6 +29,7 @@ function setImage()
 			if(el.innerHTML.indexOf("jpg")>-1){
 				var elem = document.createElement("img");
 				elem.setAttribute("src", el.href);
+				el.innerHTML='';
 				el.appendChild(elem);
 				
 				// $.ajax({
