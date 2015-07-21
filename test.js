@@ -31,6 +31,7 @@ function setImage()
 				  type: 'GET',
 				  url: el.href,
 				  timeout: 300,
+				   contentType: "image/jpg",
 				  //context: $('body'),
 				  success: function(data){
 					el.innerHTML=('<img src="data:image/png;base64,' + data + '" />');
