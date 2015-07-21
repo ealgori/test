@@ -7,12 +7,14 @@ if(frame)
 else{
 	doc = document;
 }
-doc.addEventListener('onreadystatechange',setImage,false);
 
+doc.onreadystatechange = function () {
+    if (document.readyState == "complete") {
+        setImage();
+    }
+}
 function setImage()
 {
-	//if(doc.readyState=="complete")
-	{
 		var els = doc.getElementsByTagName("a");
 		els_length = els.length;
 		for (var i = 0, l = els_length; i < l; i++) {
@@ -23,5 +25,4 @@ function setImage()
 				}
 		}
 	}
-}
 
