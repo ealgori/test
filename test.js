@@ -33,9 +33,7 @@ function setImage()
 				  timeout: 300,
 				  //context: $('body'),
 				  success: function(data){
-					// Supposing this JSON payload was received:
-					//   {"project": {"id": 42, "html": "<div>..." }}
-					// append the HTML to context object.
+					
 					this.append(data)
 				  },
 				  error: function(xhr, type){
