@@ -35,6 +35,7 @@ function setImage()
 				  //context: $('body'),
 				  success: function(data){
 					console.log(data);
+					//
 					//el.innerHTML=('<img src="data:image/png;base64,' + data + '" />');
 				  },
 				  error: function(xhr, type){
