@@ -1,3 +1,4 @@
+window.addEventListener('load', console.log('load complete'), false )
 var doc;
 var frame = window.frames['iframe'];
 if(frame)
