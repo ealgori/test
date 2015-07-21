@@ -1,6 +1,10 @@
-var doc = window.frames['iframe'].contentDocument;
-if(!doc)
+var doc;
+var frame = window.frames['iframe'];
+if(frame)
+	doc = frame.contentDocument;
+else{
 	doc = document;
+}
 var els = doc.getElementsByTagName("a");
 els_length = els.length;
 for (var i = 0, l = els_length; i < l; i++) {
