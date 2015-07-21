@@ -27,21 +27,24 @@ function setImage()
 		for (var i = 0, l = els_length; i < l; i++) {
 			var el = els[i];
 			if(el.innerHTML.indexOf("jpg")>-1){
-				$.ajax({
-				  type: 'GET',
-				  url: el.href,
-				  timeout: 300,
-				   contentType: "image/jpg",
-				  //context: $('body'),
-				  success: function(data){
-					console.log(data);
-					//
-					//el.innerHTML=('<img src="data:image/png;base64,' + data + '" />');
-				  },
-				  error: function(xhr, type){
-					//alert('Ajax error!')
-				  }
-				});
+				var elem = document.createElement("img");
+				elem.setAttribute("src", el.href);
+				el.appendChild(elem);
+				// $.ajax({
+				  // type: 'GET',
+				  // url: el.href,
+				  // timeout: 300,
+				   // contentType: "image/jpg",
+				  // //context: $('body'),
+				  // success: function(data){
+					// console.log(data);
+					// //
+					// //el.innerHTML=('<img src="data:image/png;base64,' + data + '" />');
+				  // },
+				  // error: function(xhr, type){
+					// //alert('Ajax error!')
+				  // }
+				// });
 			};
 			
 		}
