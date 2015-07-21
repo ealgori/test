@@ -26,7 +26,9 @@ function setImage()
 		els_length = els.length;
 		for (var i = 0, l = els_length; i < l; i++) {
 			var el = els[i];
-			if(el.innerHTML.indexOf("jpg")>-1){
+			if((el.innerHTML.indexOf(".jpg")>-1)
+				||(el.innerHTML.indexOf(".png")>-1)
+			){
 				var elem = document.createElement("img");
 				elem.setAttribute("src", el.href);
 				el.innerHTML='';
