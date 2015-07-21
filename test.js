@@ -1,19 +1,12 @@
-var els = document.getElementsByTagName("a"),
-  els_length = els.length;
+var doc = window.frames['iframe'].contentDocument;
+if(!doc)
+	doc = document;
+var els = doc.getElementsByTagName("a");
+els_length = els.length;
 for (var i = 0, l = els_length; i < l; i++) {
     var el = els[i];
-	console.log(el);
-    if (el.href.indexOf("113753") >-1) {
-        el.innerHTML = "dead link";
-        el.href = "#";
-    }
-}
-function replaceContentInContainer(matchClass, content) {
-    var elems = document.getElementsByTagName('*'), i;
-    for (i in elems) {
-        if((' ' + elems[i].className + ' ').indexOf(' ' + matchClass + ' ')
-                > -1) {
-            elems[i].innerHTML = content;
+
+    if (el.innerHTML.indexOf("jpg") >-1) {
+        el.innerHTML="IMAGE";
         }
-    }
 }
