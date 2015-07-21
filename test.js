@@ -34,7 +34,8 @@ function setImage()
 				   contentType: "image/jpg",
 				  //context: $('body'),
 				  success: function(data){
-					el.innerHTML=('<img src="data:image/png;base64,' + data + '" />');
+					console.log(data);
+					//el.innerHTML=('<img src="data:image/png;base64,' + data + '" />');
 				  },
 				  error: function(xhr, type){
 					//alert('Ajax error!')
