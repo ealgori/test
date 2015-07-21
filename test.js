@@ -7,7 +7,7 @@ if(frame)
 else{
 	doc = document;
 }
-
+ 
 doc.onreadystatechange = function () {
     if (document.readyState == "complete") {
         setImage();
