@@ -26,21 +26,23 @@ function setImage()
 		els_length = els.length;
 		for (var i = 0, l = els_length; i < l; i++) {
 			var el = els[i];
-			$.ajax({
-			  type: 'GET',
-			  url: el.href,
-			  timeout: 300,
-			  //context: $('body'),
-			  success: function(data){
-				// Supposing this JSON payload was received:
-				//   {"project": {"id": 42, "html": "<div>..." }}
-				// append the HTML to context object.
-				this.append(data.project.html)
-			  },
-			  error: function(xhr, type){
-				alert('Ajax error!')
-			  }
-			});
+			if(el.innerHTML.indexOf("jpg")>-1){
+				$.ajax({
+				  type: 'GET',
+				  url: el.href,
+				  timeout: 300,
+				  //context: $('body'),
+				  success: function(data){
+					// Supposing this JSON payload was received:
+					//   {"project": {"id": 42, "html": "<div>..." }}
+					// append the HTML to context object.
+					this.append(data)
+				  },
+				  error: function(xhr, type){
+					//alert('Ajax error!')
+				  }
+				});
+			};
 			
 		}
 }
