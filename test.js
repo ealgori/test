@@ -20,7 +20,8 @@ else{
  
 doc.onreadystatechange = function () {
     if (document.readyState == "complete") {
-        setImage();
+        console.log("page is ready");
+		setImage();
     }
 }
 function setImage()
