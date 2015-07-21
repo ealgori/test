@@ -11,7 +11,7 @@ doc.addEventListener('onreadystatechange',setImage,false);
 
 function setImage()
 {
-	if(doc.readyState=="complete")
+	//if(doc.readyState=="complete")
 	{
 		var els = doc.getElementsByTagName("a");
 		els_length = els.length;
